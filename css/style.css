@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=Alegreya:wght@400;700&display=swap");
+
+body {
+  text-align: center;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  background: #f9f7f6;
+  margin: 0;
+}
+
+body#post section.featured-post div.content {
+  text-align: left;
+  max-width: inherit;
+}
+
+body#post section.featured-post div.content img { 
+  display: block;
+  width: 500px;
+  height: 300px;
+}
+
+body#post section.featured-post div.content figure {
+
+  float: left;
+  margin-right: 30px;
+}
+
+a:hover,a:focus {
+  text-decoration: underline;
+}
+
+p {
+  display: block;
+  margin-bottom: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+  font-family: "Alegreya", serif;
+}
+
+blockquote {
+  max-width: 680px;
+  padding: 30px;
+  margin: auto;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 52px;
+}
+
+.cite {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container {
+    display: grid;
+    /*grid-template-rows: 0.4fr 0.3fr 0.3fr 0.4fr;*/
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+
+
+header {
+    display: grid;
+    grid-column: 1 / 2;
+    height: 65px;
+    width: 100%;
+    color: #636363;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #b0e0ea;
+    padding: 20px 0;
+    position: fixed;
+
+  }
+
+header nav ul {
+    display: flex;
+    align-items: baseline;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #242424;
+}
+
+header button {
+    border: none;
+    padding: 8px 25px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 1.25rem;
+    background-color: #51bb7b;
+    margin-right: 20px;
+}
+
+a.logo {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 32px;
+    color: #242424;
+    text-transform: uppercase;
+}
+
+.featured-post,
+footer {
+  padding: 20px;
+}
+
+footer {
+  height: 200px;
+  background-color: #ffffff;
+  border-top: 2px solid #b0e0ea;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a.logo {
+  text-align: center;
+  width: 100%;
+}
+section.featured-post {
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  background-position: center;
+  text-align: center;
+  background-color: #ffffff;
+  border: solid 1px #e9dcd5;
+  margin-top: 105px;
+}
+
+section.featured-post div.image {
+  background-image: url('https://www.nappy.co/wp-content/uploads/2018/05/afro-close-up-daylight-818819.jpg');
+  background-size: cover;
+  width: 50%;
+}
+
+section.featured-post div.content {
+  padding: 30px;
+  margin: auto;
+  max-width: 500px;
+}
+
+.post-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .post-container h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+.post-container section {
+  padding: 30px;
+  width: 270px;
+  height: 270px;
+  margin: 15px;
+  background-color: #ffffff;
+  border: 1px solid #eeeae8;
+  text-align: center;
+}
+
+.btn {
+  background-color: #e9dcd5;
+  border: solid 1px #e9dcd5;
+  color: #121212;
+  text-transform: uppercase;
+  padding: 18px 26px;
+  text-decoration: none;
+}
+
+.btn:hover,.btn:focus {
+  background-color: #ffffff;
+}
+
+@media(max-width: 900px) {
+
+  header {
+    position: relative;
+  }
+
+  section.featured-post{
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  section.featured-post div.image{
+    display: block;
+    height: 320px;
+    width: 100%;
+  }
+
+}
+
+@media(max-width: 900px) {
+    
+}
