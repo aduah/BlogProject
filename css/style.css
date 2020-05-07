@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=Alegreya:wght@400;700&display=swap");
+/** General Styles **/
 
 body {
   text-align: center;
@@ -10,26 +10,28 @@ body {
   margin: 0;
 }
 
-body#post section.featured-post div.content {
+body#post article.featured-post div.content {
   text-align: left;
   max-width: inherit;
 }
 
-body#post section.featured-post div.content img { 
+body#post article.featured-post div.content img {
   display: block;
   width: 500px;
   height: 300px;
 }
 
-body#post section.featured-post div.content figure {
-
+body#post article.featured-post div.content figure {
   float: left;
   margin-right: 30px;
 }
 
-a:hover,a:focus {
-  text-decoration: underline;
+.featured-post,
+footer {
+  padding: 20px;
 }
+
+/** Text Styles **/
 
 p {
   display: block;
@@ -59,45 +61,57 @@ h1 {
   line-height: 52px;
 }
 
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+
 .cite {
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.container {
-    display: grid;
-    /*grid-template-rows: 0.4fr 0.3fr 0.3fr 0.4fr;*/
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-  }
+/** Container Styles **/
 
+.container {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+div.social-container {
+  display: block;
+  width: 50%;
+}
+
+/**Navigation Styles **/
 
 header {
-    display: grid;
-    grid-column: 1 / 2;
-    height: 65px;
-    width: 100%;
-    color: #636363;
-    background-color: #ffffff;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #b0e0ea;
-    padding: 20px 0;
-    position: fixed;
-
-  }
+  display: grid;
+  grid-column: 1 / 2;
+  height: 65px;
+  width: 100%;
+  color: #636363;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #b0e0ea;
+  padding: 20px 0;
+  position: fixed;
+}
 
 header nav ul {
-    display: flex;
-    align-items: baseline;
-    list-style-type: none;
+  display: flex;
+  align-items: baseline;
+  list-style-type: none;
 }
 
 header nav ul li {
-    margin-right: 15px;
-    text-transform: uppercase;
+  margin-right: 15px;
+  text-transform: uppercase;
 }
 
 header nav ul li a {
@@ -106,28 +120,32 @@ header nav ul li a {
 }
 
 header button {
-    border: none;
-    padding: 8px 25px;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 1.25rem;
-    background-color: #51bb7b;
-    margin-right: 20px;
+  border: none;
+  padding: 8px 25px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 1.25rem;
+  background-color: #51bb7b;
+  margin-right: 20px;
 }
 
 a.logo {
-    margin-left: 20px;
-    text-decoration: none;
-    font-size: 32px;
-    color: #242424;
-    text-transform: uppercase;
+  margin-left: 20px;
+  font-size: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #242424;
 }
 
-.featured-post,
-footer {
+a.social {
   padding: 20px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
+
+
 
 footer {
   height: 200px;
@@ -141,12 +159,16 @@ footer {
 
 footer a.logo {
   text-align: center;
-  width: 100%;
+  margin: auto;
 }
-section.featured-post {
+
+/**Section Styles**/
+
+section.featured-post,
+article.featured-post {
   display: flex;
   flex-direction: row;
-  height: 600px;
+  min-height: 600px;
   background-position: center;
   text-align: center;
   background-color: #ffffff;
@@ -154,10 +176,32 @@ section.featured-post {
   margin-top: 105px;
 }
 
-section.featured-post div.image {
-  background-image: url('https://www.nappy.co/wp-content/uploads/2018/05/afro-close-up-daylight-818819.jpg');
+section.author-bio {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+section.author-bio p {
+  margin-bottom: 10px;
+}
+
+.author-bio-content {
+  text-align: left;
+}
+
+div.image {
+  display: block;
+  background-image: url("https://www.nappy.co/wp-content/uploads/2018/05/afro-close-up-daylight-818819.jpg");
   background-size: cover;
   width: 50%;
+}
+
+section.author-bio div.image {
+  background-image: url("https://www.nappy.co/wp-content/uploads/2018/05/accessories-adult-african-790754.jpg");
+  width: 260px;
+  height: 260px;
+  margin-right: 20px;
 }
 
 section.featured-post div.content {
@@ -167,16 +211,16 @@ section.featured-post div.content {
 }
 
 .post-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-  }
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
 
-  .post-container h2 {
-    width: 100%;
-    text-align: center;
-  }
+.post-container h2 {
+  width: 100%;
+  text-align: center;
+}
 
 .post-container section {
   padding: 30px;
@@ -188,6 +232,12 @@ section.featured-post div.content {
   text-align: center;
 }
 
+section.author-bio {
+  background-color: #ffffff;
+  border: 1px solid #eeeae8;
+  margin: 30px;
+}
+
 .btn {
   background-color: #e9dcd5;
   border: solid 1px #e9dcd5;
@@ -197,29 +247,61 @@ section.featured-post div.content {
   text-decoration: none;
 }
 
-.btn:hover,.btn:focus {
+.btn:hover,
+.btn:focus {
   background-color: #ffffff;
 }
 
-@media(max-width: 900px) {
+/**Responsive Breakpoints**/
 
-  header {
-    position: relative;
+@media (max-width: 320px) {
+  blockquote {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  body#post article.featured-post div.content figure {
+    margin: 0;
   }
 
-  section.featured-post{
+  body#post article.featured-post div.content {
+    padding: 20px;
+  }
+
+  body#post article.featured-post div.content img {
+    width: 100%;
+    height: auto;
+  }
+  section.featured-post {
     flex-direction: column;
-    margin-top: 0px;
   }
 
-  section.featured-post div.image{
-    display: block;
-    height: 320px;
+  section.featured-post div.image {
+    width: 100%;
+    height: 300px;
+  }
+
+  article.featured-post {
+    width: 100%;
+    height: auto;
+  }
+
+  article.featured-post {
+    height: auto;
+  }
+
+  section.author-bio {
+    display: flex;
+    flex-direction: column ;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .post-container section {
     width: 100%;
   }
 
-}
-
-@media(max-width: 900px) {
-    
+  .featured-post, footer {
+    padding: 0;
 }
