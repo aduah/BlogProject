@@ -1,0 +1,61 @@
+/**Responsive Breakpoints**/
+
+@media (max-width: 320px) {
+    blockquote {
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    body#post article.featured-post div.content figure {
+      margin: 0;
+    }
+  
+    body#post article.featured-post div.content {
+      margin: 20px;
+    }
+  
+    body#post article.featured-post div.content img {
+      width: 100%;
+      height: auto;
+    }
+    section.featured-post {
+      flex-direction: column;
+    }
+  
+    section.author-bio {
+      margin: 0;
+    }
+  
+    section.featured-post div.image {
+      width: 100%;
+      height: 300px;
+      font-size: 18px;
+    }
+  
+    article.featured-post {
+      width: 100%;
+      height: auto;
+    }
+  
+    article.featured-post {
+      height: auto;
+    }
+  
+    section.author-bio {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  
+    .post-container {
+      margin: auto;
+      flex-direction: column;
+    }
+  
+    .featured-post,
+    footer {
+      padding: 0;
+    }
+  }

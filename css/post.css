@@ -1,0 +1,78 @@
+/** Post Styling **/
+
+section.featured-post,
+article.featured-post {
+  display: flex;
+  flex-direction: row;
+  min-height: 600px;
+  background-position: center;
+  text-align: center;
+  background-color: #ffffff;
+  border: solid 1px #e9dcd5;
+  margin-top: 105px;
+}
+
+section.featured-post div.content {
+    padding: 30px;
+    margin: auto;
+    max-width: 500px;
+  }
+  
+  .post-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .post-container h2 {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .post-container section {
+    padding: 30px;
+    width: 270px;
+    height: 270px;
+    margin: 15px;
+    background-color: #ffffff;
+    border: 1px solid #eeeae8;
+    text-align: center;
+  }
+
+  /**Author Card Styles**/
+
+section.author-bio {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+  }
+  
+  section.author-bio p {
+    margin-bottom: 10px;
+  }
+  
+  .author-bio-content {
+    text-align: left;
+  }
+  
+  div.image {
+    display: block;
+    background-image: url("https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80 751w");
+    background-size: cover;
+    width: 50%;
+  }
+  
+  section.author-bio div.image {
+    background-image: url("https://www.nappy.co/wp-content/uploads/2018/05/accessories-adult-african-790754.jpg");
+    width: 260px;
+    height: 260px;
+    margin-right: 20px;
+  }
+  
+  section.author-bio {
+    background-color: #ffffff;
+    border: 1px solid #eeeae8;
+    margin: 30px;
+  }
+  
